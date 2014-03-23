@@ -15,6 +15,7 @@ function Automator() {
 	
 	// Setup our dashboard
 	this.setupDashboard();
+	this.overrideGameManager();
 }
 
 
