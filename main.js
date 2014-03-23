@@ -27,7 +27,7 @@ Automator.prototype.overrideGameManager = function() {
 
 
 Automator.prototype.setupDashboard = function() {
-	document.body.insertAdjacentHTML( 'Dashboard', '<div><p>This gets inserted.</p></div>' );
+	document.body.insertAdjacentHTML( 'beforebegin', '<div><p>This gets inserted.</p></div>' );
 }
 
 
