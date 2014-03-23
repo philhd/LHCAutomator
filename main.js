@@ -20,10 +20,7 @@ function Automator() {
 
 
 Automator.prototype.overrideGameManager = function() {
-	window.requestAnimationFrame(function () {
-		// Expose a global variable for our use later
-		manager = new GameManager(4, KeyboardInputManager, HTMLActuator, LocalScoreManager);
-	});
+	manager = new GameManager(4, KeyboardInputManager, HTMLActuator, LocalScoreManager);
 }
 
 
@@ -36,7 +33,7 @@ Automator.prototype.cleanUp = function() {
 	console.log( "Cleaning up Automator" );
 }
 
-/*
+
 function getBoardState() {
 	var state = [];
 
@@ -44,7 +41,7 @@ function getBoardState() {
 		state[iRow] = [];
 
 	var boardElements = document.getElementsByClassName('tile');
-}*/
+}
 
 
 // -----------------------------------------------------------------
