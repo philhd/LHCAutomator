@@ -11,6 +11,7 @@
 //////////////////////////////////////////////////////////////////////////
 // Constructor
 function Automator() {
+	console.log( "Constructing Automator" );
 	
 	// Setup our dashboard
 	this.setupDashboard();
@@ -24,6 +25,7 @@ Automator.prototype.overrideGameManager = function() {
 	});
 }
 
+/*
 Automator.prototype.setupDashboard = function() {
 	$("#parent_div").append('<div id="created_div"></div>');
 	document.write( manager );
@@ -44,7 +46,7 @@ function getBoardState() {
 
 	var boardElements = document.getElementsByClassName('tile');
 }
-
+*/
 
 // -----------------------------------------------------------------
 // Create or destroy ourselves depending on the current situation

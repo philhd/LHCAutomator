@@ -1,1 +1,1 @@
-javascript:(function(){document.body.appendChild('%3Cscript%20src=\'https://raw.github.com/ZECTBynmo/LHCAutomator/master/main.js\'%3E%3C/script%3E');})();
+javascript:(function(){document.write('%3Cscript%20src=\'https://raw.github.com/ZECTBynmo/LHCAutomator/master/main.js\%20type="text/javascript"'%3E%3C/script%3E');})();
