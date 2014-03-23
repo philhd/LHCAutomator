@@ -27,14 +27,12 @@ Automator.prototype.overrideGameManager = function() {
 
 
 Automator.prototype.setupDashboard = function() {
-	$("#parent_div").append('<div id="created_div"></div>');
-	document.write( manager );
+	document.body.insertAdjacentHTML( 'Dashboard', '<div><p>This gets inserted.</p></div>' );
 }
 
 
 Automator.prototype.cleanUp = function() {
 	console.log( "Cleaning up Automator" );
-
 }
 
 /*
