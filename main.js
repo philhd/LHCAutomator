@@ -11,15 +11,23 @@
 //////////////////////////////////////////////////////////////////////////
 // Constructor
 function Automator() {
+	var _this = this;
+
 	console.log( "Constructing Automator" );
+
+	this.isDisabled = false;
 	
 	// Setup our dashboard
 	this.overrideGameManager();
 
 	function getMoveFn() {
+
 		var direction = 0;
 
 		return function() { 
+			if( _this.isDisabled ) 
+				return;
+
 			manager.move(direction); 
 			direction++; 
 			if( direction === 2 ) {
@@ -39,6 +47,7 @@ Automator.prototype.overrideGameManager = function() {
 
 Automator.prototype.cleanUp = function() {
 	console.log( "Cleaning up Automator" );
+	this.isDisabled = true;
 }
 
 
