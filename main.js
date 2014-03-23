@@ -12,12 +12,37 @@
 // Constructor
 function Automator() {
 	
+	// Setup our dashboard
+	this.setupDashboard();
+}
+
+
+Automator.prototype.overrideGameManager = function() {
+	window.requestAnimationFrame(function () {
+		// Expose a global variable for our use later
+		manager = new GameManager(4, KeyboardInputManager, HTMLActuator, LocalScoreManager);
+	});
+}
+
+Automator.prototype.setupDashboard = function() {
+	$("#parent_div").append('<div id="created_div"></div>');
+	document.write( manager );
 }
 
 
 Automator.prototype.cleanUp = function() {
 	console.log( "Cleaning up Automator" );
 
+}
+
+
+function getBoardState() {
+	var state = [];
+
+	for( uint iRow=0; iRow<4; ++iRow )
+		state[iRow] = [];
+
+	var boardElements = document.getElementsByClassName('tile');
 }
 
 
