@@ -30,7 +30,7 @@ function Automator() {
 
 			manager.move(direction); 
 			direction++; 
-			if( direction === 2 ) {
+			if( direction === 4 ) {
 				direction = 0;
 			}
 		}
