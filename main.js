@@ -15,6 +15,20 @@ function Automator() {
 	
 	// Setup our dashboard
 	this.overrideGameManager();
+
+	function getAutoMoveFn() {
+		var direction = 0;
+
+		return function() { 
+			manager.move(direction); 
+			direction++; 
+			if( direction === 4 ) {
+				direction=0;
+			} 
+		}
+	}
+
+	setInterval( getAutoMoveFn(), 0 );
 }
 
 
