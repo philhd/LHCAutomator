@@ -16,19 +16,19 @@ function Automator() {
 	// Setup our dashboard
 	this.overrideGameManager();
 
-	function getAutoMoveFn() {
+	function getMoveFn() {
 		var direction = 0;
 
 		return function() { 
 			manager.move(direction); 
 			direction++; 
-			if( direction === 4 ) {
+			if( direction === 3 ) {
 				direction=0;
 			} 
 		}
 	}
 
-	setInterval( getAutoMoveFn(), 0 );
+	setInterval( getMoveFn(), 0 );
 }
 
 
