@@ -37,7 +37,7 @@ Automator.prototype.cleanUp = function() {
 
 }
 
-
+/*
 function getBoardState() {
 	var state = [];
 
@@ -45,7 +45,7 @@ function getBoardState() {
 		state[iRow] = [];
 
 	var boardElements = document.getElementsByClassName('tile');
-}
+}*/
 
 
 // -----------------------------------------------------------------
