@@ -42,16 +42,6 @@ Automator.prototype.cleanUp = function() {
 }
 
 
-function getBoardState() {
-	var state = [];
-
-	for( uint iRow=0; iRow<4; ++iRow )
-		state[iRow] = [];
-
-	var boardElements = document.getElementsByClassName('tile');
-}
-
-
 // -----------------------------------------------------------------
 // Create or destroy ourselves depending on the current situation
 // -----------------------------------------------------------------
