@@ -14,18 +14,12 @@ function Automator() {
 	console.log( "Constructing Automator" );
 	
 	// Setup our dashboard
-	this.setupDashboard();
 	this.overrideGameManager();
 }
 
 
 Automator.prototype.overrideGameManager = function() {
 	manager = new GameManager(4, KeyboardInputManager, HTMLActuator, LocalScoreManager);
-}
-
-
-Automator.prototype.setupDashboard = function() {
-	document.body.insertAdjacentHTML( 'beforebegin', '<div><p>This gets inserted.</p></div>' );
 }
 
 
