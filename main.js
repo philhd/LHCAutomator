@@ -18,12 +18,6 @@ function Automator() {
 Automator.prototype.cleanUp = function() {
 	console.log( "Cleaning up Automator" );
 
-	this.stopAutoWoot();
-	this.stopAutoSkip();
-	
-	this.isDisabled = true;
-	
-	$("#zectWasHere").remove();
 }
 
 
