@@ -22,9 +22,9 @@ function Automator() {
 		return function() { 
 			manager.move(direction); 
 			direction++; 
-			if( direction === 3 ) {
-				direction=0;
-			} 
+			if( direction === 2 ) {
+				direction = 0;
+			}
 		}
 	}
 
