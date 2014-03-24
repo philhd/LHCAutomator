@@ -25,7 +25,7 @@ function Automator() {
 		var direction = 0;
 
 		return function() {
-			randomPushCounter = 0
+			var randomPushCounter = 0;
 			if( _this.isDisabled ) 
 				return;
 			// every nth move, push in the same direction
