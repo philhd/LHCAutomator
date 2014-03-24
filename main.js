@@ -24,12 +24,17 @@ function Automator() {
 
 		var direction = 0;
 
-		return function() { 
+		return function() {
+			randomPushCounter = 0
 			if( _this.isDisabled ) 
 				return;
-
+			// every nth move, push in the same direction
+			if(randomPushCounter % 50 == 0){
+				direction--;
+			}
 			manager.move(direction); 
-			direction++; 
+			direction++;
+			randomPushCounter++;
 			if( direction === 4 ) {
 				direction = 0;
 			}
