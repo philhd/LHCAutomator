@@ -30,7 +30,7 @@ function Automator() {
 			if( _this.isDisabled ) 
 				return;
 			// every nth move, go up twice
-			if(randomPushCounter % 50 == 0 && (direction == 1 || direction == 3){
+			if(randomPushCounter % 50 == 0 && (direction == 1 || direction == 3)){
 				//direction -= 1;
 			}
 			manager.move(pattern[direction]); 
