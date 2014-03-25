@@ -24,15 +24,16 @@ function Automator() {
 
 		var direction = 0;
 		var randomPushCounter = 1;
+		var pattern = [0,1,0,2]
 
 		return function() {		
 			if( _this.isDisabled ) 
 				return;
-			// every nth move, push in the same direction
-			if(randomPushCounter % 50 == 0){
-				direction--;
+			// every nth move, go up twice
+			if(randomPushCounter % 50 == 0 && (direction == 1 || direction == 3){
+				//direction -= 1;
 			}
-			manager.move(direction); 
+			manager.move(pattern[direction]); 
 			direction++;
 			randomPushCounter++;
 			if( direction === 4 ) {
