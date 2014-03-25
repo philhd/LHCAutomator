@@ -24,7 +24,7 @@ function Automator() {
 
 		var direction = 0;
 		var randomPushCounter = 1;
-		var pattern = [0,1,0,2]
+		var pattern = [0,1,0,3]
 
 		return function() {		
 			if( _this.isDisabled ) 
